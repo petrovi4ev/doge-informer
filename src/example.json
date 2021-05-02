@@ -1,0 +1,12 @@
+{
+    "ticker":{
+        "base":"DOGE",
+        "target":"USD",
+        "price":"0.05875799",
+        "volume":"2017765902.96289992",
+        "change":"-0.00035797"
+    },
+    "timestamp":1617818583,
+    "success":true,
+    "error":""
+}
