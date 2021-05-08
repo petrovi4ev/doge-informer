@@ -19,7 +19,7 @@ const String uah = "uah";
 
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
-float getPrice(String base, String target) {
+float getInfo(String base, String target) {
   String url = apiBody + base + "-" + target;
   if ((WiFi.status() == WL_CONNECTED)) {
     HTTPClient http;
@@ -72,9 +72,9 @@ void setup() {
 
 void loop() {
   if ((WiFi.status() == WL_CONNECTED)) {
-    float dogeToUsd = getPrice(doge, usd);
-    float usdToDoge = getPrice(usd, doge);
-    float dogeToUah = getPrice(doge, uah);
+    float dogeToUsd = getInfo(doge, usd);
+    float usdToDoge = getInfo(usd, doge);
+    float dogeToUah = getInfo(doge, uah);
 
     display.clearDisplay();
 
