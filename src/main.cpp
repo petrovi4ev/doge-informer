@@ -63,7 +63,7 @@ void setup() {
   }
   Serial.println("Connected to the Wi-Fi network");
 
-  if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) { // Address 0x3D -> 128x64, 0x3C -> 128x32
+  if(!display.begin(SSD1306_SWITCHCAPVCC, 0x3C)) {
     Serial.println(F("SSD1306 allocation failed"));
     for(;;);
   }
